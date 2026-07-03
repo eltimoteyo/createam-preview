@@ -86,6 +86,8 @@
     .hero-particle svg { display: block; }
   </style>
   <style>
+    /* Móvil: tipografía fluida para que SOLUCIONES nunca desborde */
+    @media(max-width:639px)                         { h1.hero-h1 { font-size:clamp(2.4rem, 12.5vw, 3.6rem) !important; line-height:0.95 !important } }
     @media(min-width:768px)  and (max-width:1023px) { h1.hero-h1 { font-size:4rem   !important; line-height:0.9 !important } }
     @media(min-width:1024px) and (max-width:1279px) { h1.hero-h1 { font-size:3.5rem !important; line-height:0.9 !important } }
     @media(min-width:1280px)                        { h1.hero-h1 { font-size:5.5rem !important; line-height:0.85 !important } }
@@ -540,7 +542,7 @@
           <div class="relative z-10 w-full px-6 lg:px-12 pt-32 pb-20">
             <div class="max-w-7xl mx-auto">
               <div class="lg:w-1/2 xl:w-5/12">
-              <p class="font-mono text-sm text-[#22c55e] mb-6">// build: OK · en producción desde 2017</p>
+              <p class="font-mono text-xs sm:text-sm text-[#22c55e] mb-6">// build: OK · en producción desde 2017</p>
               <h1
                 class="font-display font-black text-6xl sm:text-7xl text-white leading-[0.85] lg:leading-[0.9] mb-8 lg:mb-6 hero-h1">
                 <span class="word block">SOLUCIONES</span><span class="word block text-[#22c55e]">CREATIVAS</span><span
@@ -551,10 +553,10 @@
                   Tu proyecto no es un experimento: lo construye el mismo equipo que opera productos SaaS que
                   cientos de negocios en Perú usan a diario.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                  <a href="#contacto" class="btn-brutal group"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+                  <a href="#contacto" class="btn-brutal group justify-center w-full sm:w-auto"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-5 h-5"
+                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-5 h-5 hidden sm:block"
                       aria-hidden="true">
                       <path d="M16 7h6v6"></path>
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
@@ -565,7 +567,7 @@
                       aria-hidden="true">
                       <path d="m7 7 10 10"></path>
                       <path d="M17 7v10H7"></path>
-                    </svg></a><a href="#proyectos" class="btn-brutal-outline">Ver resultados</a>
+                    </svg></a><a href="#proyectos" class="btn-brutal-outline justify-center w-full sm:w-auto">Ver resultados</a>
                 </div>
               </div>
               <div class="mt-20 lg:mt-10 xl:mt-20 grid grid-cols-3 gap-8 max-w-xl">

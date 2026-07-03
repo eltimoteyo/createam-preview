@@ -100,10 +100,18 @@
 .hover\:shadow-\[6px_6px_0_\#22c55e\]:hover{--tw-shadow:6px 6px 0 #22c55e;--tw-shadow-colored:6px 6px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}
 .hover\:shadow-\[6px_6px_0_\#84cc16\]:hover{--tw-shadow:6px 6px 0 #84cc16;--tw-shadow-colored:6px 6px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}
 
+/* Móvil: botones brutalistas más compactos para pantallas angostas */
+@media (max-width:639px){
+  .btn-brutal,.btn-brutal-outline{font-size:.875rem;padding:.875rem 1.25rem;gap:.5rem}
+}
+
 /* Breakpoints */
 @media (min-width:640px){
+  .sm\:text-sm{font-size:.875rem;line-height:1.25rem}
+  .sm\:text-xl{font-size:1.25rem;line-height:1.75rem}
   .sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}
   .sm\:text-8xl{font-size:6rem;line-height:1}
+  .sm\:w-auto{width:auto}
 }
 @media (min-width:768px){
   .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
