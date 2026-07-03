@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: /_template.html
+
+# Allow AI crawlers to index content (AEO signals)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GoogleExtended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+Sitemap: https://createam.io/sitemap.xml

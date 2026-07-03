@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Fix: disable browser scroll restoration so GSAP always starts from top -->
+  <script>if(history.scrollRestoration)history.scrollRestoration='manual';window.scrollTo(0,0);</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html,body{overflow-x:hidden;width:100%;max-width:100%;}
+    img{max-width:100%;height:auto;}
+  </style>
+  <title>Política de Privacidad | CREATEAM</title>
+  <meta name="description" content="Política de privacidad de CREATEAM: cómo tratamos tus datos personales conforme a la Ley 29733 del Perú." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://createam.io/politica-privacidad.html" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/bundle.css" />
+  <link rel="stylesheet" href="css/patch.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="relative bg-[#081208] noise-bg">
+      <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#081208]/95 backdrop-blur-md">
+        <div class="w-full px-6 lg:px-12">
+          <div class="flex items-center justify-between h-20">
+            <a class="flex items-center group" href="index.html">
+              <img src="logo.png" alt="Createam" class="h-10 w-auto" />
+              <span class="font-display font-black text-xl hidden lg:block tracking-tight"><span style="color:#ffffff">CREA</span><span style="color:#84cc16">TEAM</span></span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="servicios.html"><span class="relative z-10">Servicios</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="index.html#saas"><span class="relative z-10">SaaS</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="proyectos.html"><span class="relative z-10">Proyectos</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="blog.html"><span class="relative z-10">Blog</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="nosotros.html"><span class="relative z-10">Nosotros</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="contacto.html"><span class="relative z-10">Contacto</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="btn-brutal text-sm flex items-center gap-2" href="contacto.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Empezar proyecto</a>
+            </div>
+            <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" class="lg:hidden w-12 h-12 bg-[#22c55e] flex items-center justify-center corner-cut-sm-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6 text-[#081208]" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden transition-all duration-500 opacity-0 invisible" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+        <div class="absolute inset-0 bg-[#081208]/98 backdrop-blur-xl"></div>
+        <div class="relative h-full flex flex-col items-center justify-center gap-8">
+          <a href="servicios.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0s">Servicios</a>
+          <a href="index.html#saas" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.1s">SaaS</a>
+          <a href="proyectos.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.2s">Proyectos</a>
+          <a href="blog.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.3s">Blog</a>
+          <a href="nosotros.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.4s">Nosotros</a>
+          <a href="contacto.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.5s">Contacto</a>
+          <a href="contacto.html" class="mobile-nav-cta mt-8 btn-brutal transition-all duration-500 translate-y-10 opacity-0 flex items-center gap-2" style="transition-delay:0.6s"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Empezar proyecto</a>
+        </div>
+      </div>
+
+      <main class="relative pt-32 pb-20">
+        <section class="w-full px-6 lg:px-12">
+          <div class="max-w-3xl mx-auto">
+            <nav aria-label="Breadcrumb" class="mb-8">
+              <ol class="flex items-center gap-2 font-mono text-xs text-white/40">
+                <li><a href="index.html" class="hover:text-[#22c55e] transition-colors">Inicio</a></li>
+                <li aria-hidden="true">/</li>
+                <li class="text-white/70">Política de privacidad</li>
+              </ol>
+            </nav>
+            <span class="inline-block px-4 py-2 mb-6 bg-[#22c55e]/10 border-2 border-[#22c55e] font-mono text-xs text-[#22c55e] uppercase tracking-widest corner-cut-sm-2">LEGAL</span>
+            <h1 class="font-display font-black text-4xl md:text-5xl text-white mb-4 leading-tight">Política de Privacidad</h1>
+            <p class="text-white/40 font-mono text-sm mb-12">Última actualización: julio de 2026</p>
+
+            <div class="space-y-10 text-white/70 leading-relaxed">
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">1. Responsable del tratamiento</h2>
+                <p>CREATEAM (en adelante, «nosotros») es responsable del tratamiento de los datos personales que nos
+                proporcionas a través de este sitio web (createam.io), de conformidad con la Ley N.º 29733 — Ley de
+                Protección de Datos Personales del Perú — y su reglamento. Puedes contactarnos en
+                <a href="mailto:hello@createam.io" class="text-[#22c55e] hover:text-[#84cc16] transition-colors">hello@createam.io</a>.</p>
+              </section>
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">2. Datos que recolectamos</h2>
+                <p>Únicamente recolectamos los datos que nos entregas voluntariamente mediante el formulario de
+                contacto o al escribirnos por WhatsApp o correo: nombre, correo electrónico, empresa (opcional) y el
+                contenido de tu mensaje. Este sitio no utiliza cookies de seguimiento ni herramientas de analítica que
+                identifiquen a los visitantes.</p>
+              </section>
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">3. Finalidad del tratamiento</h2>
+                <p>Usamos tus datos exclusivamente para: (a) responder a tu consulta o solicitud de cotización,
+                (b) elaborar y enviarte propuestas comerciales, y (c) mantener la comunicación relacionada con un
+                posible proyecto. No vendemos, alquilamos ni cedemos tus datos a terceros con fines publicitarios.</p>
+              </section>
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">4. Encargados y transferencias</h2>
+                <p>Para operar el formulario de contacto utilizamos proveedores de infraestructura y mensajería
+                (por ejemplo, servicios de envío de formularios y correo electrónico) que pueden procesar los datos en
+                servidores ubicados fuera del Perú, siempre bajo condiciones de seguridad y confidencialidad
+                equivalentes a las exigidas por la normativa peruana.</p>
+              </section>
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">5. Plazo de conservación</h2>
+                <p>Conservamos tus datos mientras dure la relación comercial o la conversación iniciada, y como máximo
+                por el tiempo necesario para atender obligaciones legales o contractuales. Puedes solicitar su
+                eliminación en cualquier momento.</p>
+              </section>
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">6. Tus derechos (ARCO)</h2>
+                <p>Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, cancelación y oposición
+                sobre tus datos personales, así como revocar el consentimiento otorgado. Para hacerlo, escríbenos a
+                <a href="mailto:hello@createam.io" class="text-[#22c55e] hover:text-[#84cc16] transition-colors">hello@createam.io</a>
+                indicando el derecho que deseas ejercer. Atenderemos tu solicitud dentro de los plazos que establece la
+                ley. Si consideras que no hemos atendido debidamente tu solicitud, puedes acudir a la Autoridad
+                Nacional de Protección de Datos Personales.</p>
+              </section>
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">7. Seguridad</h2>
+                <p>Aplicamos medidas técnicas y organizativas razonables para proteger tus datos contra el acceso no
+                autorizado, la pérdida o la alteración, incluyendo cifrado en tránsito (HTTPS) y acceso restringido a
+                la información de contacto.</p>
+              </section>
+              <section>
+                <h2 class="font-display font-bold text-2xl text-white mb-4">8. Cambios a esta política</h2>
+                <p>Podemos actualizar esta política para reflejar cambios normativos u operativos. Publicaremos la
+                versión vigente en esta misma página con su fecha de actualización.</p>
+              </section>
+              <div class="pt-6">
+                <a href="contacto.html" class="btn-brutal-outline inline-flex items-center gap-2">¿Dudas? Contáctanos</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="relative bg-[#040a04] border-t-4 border-[#22c55e]" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="w-full px-6 lg:px-12 py-20">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+              <div class="lg:col-span-2">
+                <a class="inline-flex items-center gap-3 mb-6 group" href="index.html">
+                  <img src="logo.png" alt="Createam" class="h-12 w-auto" />
+                  <span class="font-display font-black text-3xl"><span style="color:#22c55e">CREA</span><span style="color:#84cc16">TEAM</span></span>
+                </a>
+                <p class="text-white/40 leading-relaxed max-w-md mb-8">
+                  Desarrollamos software con creatividad y tecnología de punta. Transformamos tus ideas en soluciones digitales que impulsan tu negocio.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white mb-6 flex items-center gap-2"><span class="w-2 h-2 bg-[#22c55e]"></span>SERVICIOS</h4>
+                <ul class="space-y-3">
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/desarrollo-web.html"><span>Desarrollo Web</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/apps-moviles.html"><span>Apps Móviles</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/presencia-digital.html"><span>Presencia Digital</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/optimizacion.html"><span>Optimización</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/arquitectura-cloud.html"><span>Arquitectura Cloud</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/ux-ui-design.html"><span>UX/UI Design</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/integracion-ia.html"><span>Integración de IA</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white mb-6 flex items-center gap-2"><span class="w-2 h-2 bg-[#84cc16]"></span>EMPRESA</h4>
+                <ul class="space-y-3">
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="nosotros.html"><span>Sobre nosotros</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="proyectos.html"><span>Proyectos</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="blog.html"><span>Blog</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="contacto.html"><span>Contacto</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white mb-6 flex items-center gap-2"><span class="w-2 h-2 bg-[#22c55e]"></span>BLOG</h4>
+                <ul class="space-y-3">
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/ia-para-negocios.html"><span>IA para tu negocio</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/arquitectura-clean.html"><span>Arquitectura Clean</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/microservicios.html"><span>Microservicios</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/react-vs-vue.html"><span>React vs Vue</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/devops-basico.html"><span>DevOps Básico</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+              <p class="font-mono text-sm text-white/30">© <span class="copyright-year">2026</span> CREATEAM. TODOS LOS DERECHOS RESERVADOS.</p>
+              <a class="font-mono text-sm text-white/30 hover:text-[#22c55e] transition-colors" href="politica-privacidad.html">Política de privacidad</a>
+              <p class="font-mono text-sm text-white/30 flex items-center gap-2">HECHO CON<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 text-[#22c55e]" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>EN LIMA, PERÚ</p>
+            </div>
+          </div>
+        </div>
+        <button id="back-to-top" class="fixed bottom-24 right-6 w-14 h-14 bg-[#22c55e] flex items-center justify-center hover:bg-[#84cc16] transition-colors z-50 cursor-pointer border-none" aria-label="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-6 h-6 text-black -rotate-45" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+51945111310?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20cotizar%20un%20proyecto.%20¿Me%20pueden%20ayudar?" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="Contáctanos por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</body>
+</html>

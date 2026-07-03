@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Fix: disable browser scroll restoration so GSAP always starts from top -->
+  <script>if(history.scrollRestoration)history.scrollRestoration='manual';window.scrollTo(0,0);</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html,body{overflow-x:hidden;width:100%;max-width:100%;}
+    img{max-width:100%;height:auto;}
+  </style>
+  <title>Portfolio de proyectos de software | CREATEAM Lima</title>
+  <meta name="description" content="Descubre el portfolio de CREATEAM: proyectos de software, apps web, móviles y arquitecturas cloud desarrollados para empresas en Lima, Perú y Latinoamérica." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://createam.io/proyectos.html" />
+  <link rel="alternate" hreflang="es" href="https://createam.io/proyectos.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CREATEAM" />
+  <meta property="og:title" content="Portfolio de proyectos de software | CREATEAM Lima" />
+  <meta property="og:description" content="Proyectos de software a medida desarrollados por CREATEAM en Lima, Perú. Apps web, móviles, SaaS y arquitecturas cloud con resultados medibles." />
+  <meta property="og:url" content="https://createam.io/proyectos.html" />
+  <meta property="og:image" content="https://createam.io/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Portfolio de proyectos de software de CREATEAM en Lima, Perú" />
+  <meta property="og:locale" content="es_PE" />
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio de proyectos de software | CREATEAM Lima" />
+  <meta name="twitter:description" content="Proyectos de software a medida desarrollados por CREATEAM en Lima, Perú. Apps web, móviles, SaaS y arquitecturas cloud con resultados medibles." />
+  <meta name="twitter:image" content="https://createam.io/images/og-image.jpg" />
+  <!-- Geo -->
+  <meta name="geo.region" content="PE-LIM" />
+  <meta name="geo.placename" content="Lima, Perú" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/bundle.css" />
+  <link rel="stylesheet" href="css/patch.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    @media(min-width:768px) and (max-width:1023px){ h1.hero-h1 { font-size:4rem !important; line-height:0.9 !important; } }
+    @media(min-width:1024px) and (max-width:1279px){ h1.hero-h1 { font-size:3.5rem !important; line-height:0.9 !important; } }
+    @media(min-width:1280px){ h1.hero-h1 { font-size:5.5rem !important; line-height:0.85 !important; } }
+    .faq details[open] summary ~ * { animation: faq-open 0.3s ease; }
+    @keyframes faq-open { from { opacity:0; transform: translateY(-4px);} to { opacity:1; transform: translateY(0);} }
+  </style>
+  <!-- Organization + LocalBusiness (common to all pages) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://createam.io/#organization",
+        "name": "CREATEAM",
+        "alternateName": "Createam Software Agency",
+        "url": "https://createam.io/",
+        "logo": "https://createam.io/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+51-945-111-310",
+          "contactType": "sales",
+          "areaServed": "PE",
+          "availableLanguage": ["Spanish"]
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://createam.io/#localbusiness",
+        "name": "CREATEAM",
+        "image": "https://createam.io/images/hero_photo_a.jpg",
+        "url": "https://createam.io/",
+        "telephone": "+51 945 111 310",
+        "email": "hello@createam.io",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lima",
+          "addressRegion": "Lima",
+          "postalCode": "15000",
+          "addressCountry": "PE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -12.0464,
+          "longitude": -77.0428
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- WebPage + Breadcrumbs + Project ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://createam.io/proyectos.html#webpage",
+        "url": "https://createam.io/proyectos.html",
+        "name": "Portfolio de proyectos de software | CREATEAM Lima",
+        "description": "Portfolio de proyectos de software desarrollados por CREATEAM en Lima, Perú.",
+        "isPartOf": { "@id": "https://createam.io/#website" },
+        "about": { "@id": "https://createam.io/#organization" },
+        "breadcrumb": { "@id": "https://createam.io/proyectos.html#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://createam.io/proyectos.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://createam.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://createam.io/proyectos.html" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://createam.io/proyectos.html#projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Plataforma SaaS de gestión logística",
+              "description": "Panel centralizado para rastreo de flotas, rutas y métricas de entrega en tiempo real.",
+              "image": "https://createam.io/images/project_thumb_01.jpg",
+              "url": "https://createam.io/proyectos.html",
+              "creator": { "@id": "https://createam.io/#organization" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "E-commerce omnicanal para retail",
+              "description": "Tienda online con catálogo multicanal, pagos locales e integración con ERP.",
+              "image": "https://createam.io/images/project_thumb_02.jpg",
+              "url": "https://createam.io/proyectos.html",
+              "creator": { "@id": "https://createam.io/#organization" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "App móvil de reservas y pagos",
+              "description": "Aplicación iOS y Android para agendar servicios, pagos digitales y notificaciones push.",
+              "image": "https://createam.io/images/project_thumb_03.jpg",
+              "url": "https://createam.io/proyectos.html",
+              "creator": { "@id": "https://createam.io/#organization" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Dashboard de analytics financiero",
+              "description": "Visualización de KPIs financieros, reportes automatizados y proyecciones con BI.",
+              "image": "https://createam.io/images/project_thumb_04.jpg",
+              "url": "https://createam.io/proyectos.html",
+              "creator": { "@id": "https://createam.io/#organization" }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root">
+    <div class="relative bg-[#081208] noise-bg">
+      <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#081208]/95 backdrop-blur-md">
+        <div class="w-full px-6 lg:px-12">
+          <div class="flex items-center justify-between h-20">
+            <a class="flex items-center group" href="index.html">
+              <img src="logo.png" alt="Createam" class="h-10 w-auto" />
+              <span class="font-display font-black text-xl hidden lg:block tracking-tight"><span style="color:#ffffff">CREA</span><span style="color:#84cc16">TEAM</span></span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="servicios.html"><span class="relative z-10">Servicios</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="index.html#saas"><span class="relative z-10">SaaS</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="proyectos.html"><span class="relative z-10">Proyectos</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="blog.html"><span class="relative z-10">Blog</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="nosotros.html"><span class="relative z-10">Nosotros</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="relative font-mono text-sm transition-colors group text-white/70 hover:text-[#22c55e]" href="contacto.html"><span class="relative z-10">Contacto</span><span class="absolute -bottom-1 left-0 h-0.5 bg-[#22c55e] transition-all duration-300 w-0 group-hover:w-full"></span></a>
+              <a class="btn-brutal text-sm flex items-center gap-2" href="contacto.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Empezar proyecto</a>
+            </div>
+            <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" class="lg:hidden w-12 h-12 bg-[#22c55e] flex items-center justify-center corner-cut-sm-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6 text-[#081208]" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden transition-all duration-500 opacity-0 invisible" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+        <div class="absolute inset-0 bg-[#081208]/98 backdrop-blur-xl"></div>
+        <div class="relative h-full flex flex-col items-center justify-center gap-8">
+          <a href="servicios.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0s">Servicios</a>
+          <a href="index.html#saas" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.1s">SaaS</a>
+          <a href="proyectos.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.2s">Proyectos</a>
+          <a href="blog.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.3s">Blog</a>
+          <a href="nosotros.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.4s">Nosotros</a>
+          <a href="contacto.html" class="mobile-nav-link text-4xl font-display font-black transition-all duration-500 text-white hover:text-[#22c55e] translate-y-10 opacity-0" style="transition-delay:0.5s">Contacto</a>
+          <a href="contacto.html" class="mobile-nav-cta mt-8 btn-brutal transition-all duration-500 translate-y-10 opacity-0 flex items-center gap-2" style="transition-delay:0.6s"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Empezar proyecto</a>
+        </div>
+      </div>
+
+      <main class="relative">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="w-full px-6 lg:px-12 pt-28 pb-4">
+          <ol class="flex items-center gap-2 font-mono text-xs text-white/40 max-w-7xl mx-auto" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="index.html" class="hover:text-[#22c55e] transition-colors"><span itemprop="name">Inicio</span></a>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li class="text-white/20">/</li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span itemprop="name" class="text-[#22c55e]">Proyectos</span>
+              <meta itemprop="item" content="https://createam.io/proyectos.html" />
+              <meta itemprop="position" content="2" />
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero -->
+        <section class="relative w-full min-h-[70vh] flex items-center bg-[#081208] overflow-hidden">
+          <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute -right-32 top-1/2 opacity-5 -translate-y-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-[40vw] h-[40vw] text-[#22c55e]" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+            </div>
+            <div class="absolute top-[20%] left-[10%] w-24 h-24 border-4 border-[#22c55e]/20 corner-cut-1"></div>
+            <div class="absolute bottom-[20%] right-[15%] w-16 h-16 bg-[#84cc16]/10 corner-cut-2"></div>
+          </div>
+          <div class="relative z-10 w-full px-6 lg:px-12 py-20">
+            <div class="max-w-7xl mx-auto">
+              <div class="max-w-3xl">
+                <span class="inline-block px-4 py-2 mb-6 bg-[#22c55e]/10 border-2 border-[#22c55e] font-mono text-xs text-[#22c55e] uppercase tracking-widest corner-cut-sm-2">Portfolio</span>
+                <h1 class="hero-h1 font-display font-black text-5xl sm:text-6xl lg:text-7xl text-white leading-[0.9] mb-8">
+                  <span class="block">PORTFOLIO DE</span>
+                  <span class="block text-[#22c55e]">PROYECTOS</span>
+                  <span class="block text-[#84cc16]">DE SOFTWARE</span>
+                </h1>
+                <p class="text-xl lg:text-2xl text-white/60 leading-relaxed mb-10 max-w-2xl">
+                  Transformamos desafíos de negocio en productos digitales escalables. Cada proyecto es una muestra de estrategia, diseño y tecnología aplicada a resultados reales.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                  <a href="contacto.html" class="btn-brutal flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-5 h-5" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+                    Cotizar proyecto
+                  </a>
+                  <a href="servicios.html" class="btn-brutal-outline">Ver servicios</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="relative w-full py-20 bg-[#081208]">
+          <div class="w-full px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+              <div class="lg:col-span-2">
+                <h2 class="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white mb-6 leading-tight">
+                  De la idea al <span class="text-[#22c55e]">producto en producción</span>
+                </h2>
+                <p class="text-lg text-white/50 leading-relaxed max-w-2xl">
+                  En CREATEAM diseñamos y desarrollamos soluciones digitales que resuelven problemas concretos: desde plataformas SaaS y apps móviles hasta e-commerce y dashboards de inteligencia de negocios. Cada línea de código busca escalabilidad, usabilidad y retorno de inversión.
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-6 bg-[#0d1f0d] border-2 border-[#22c55e] corner-cut-1 text-center">
+                  <div class="font-display font-black text-4xl text-[#22c55e]">150+</div>
+                  <div class="font-mono text-xs text-white/40 uppercase tracking-wider mt-2">Proyectos</div>
+                </div>
+                <div class="p-6 bg-[#0d1f0d] border-2 border-[#84cc16] corner-cut-2 text-center">
+                  <div class="font-display font-black text-4xl text-[#84cc16]">9+</div>
+                  <div class="font-mono text-xs text-white/40 uppercase tracking-wider mt-2">Años</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Proyectos destacados -->
+        <section id="destacados" class="relative w-full py-24 bg-[#081208]">
+          <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute -top-1/2 -right-1/4 w-[150%] h-[150%] bg-gradient-to-bl from-[#22c55e]/5 to-transparent rotate-12"></div>
+          </div>
+          <div class="relative w-full px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto">
+              <div class="mb-16">
+                <span class="section-header inline-block px-4 py-2 mb-6 bg-[#84cc16]/10 border-2 border-[#84cc16] font-mono text-xs text-[#84cc16] uppercase tracking-widest corner-cut-sm-1">Destacados</span>
+                <h2 class="section-header font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
+                  PROYECTOS QUE <span class="text-[#22c55e]">IMPACTAN</span>
+                </h2>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Proyecto 1 -->
+                <article class="project-card group relative bg-[#0d1f0d] border-4 border-[#22c55e] transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0_#22c55e] overflow-hidden">
+                  <div class="relative overflow-hidden aspect-video">
+                    <img src="images/project_thumb_01.jpg" alt="Plataforma SaaS de gestión logística con mapa de rutas en tiempo real" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute top-4 left-4">
+                      <span class="font-mono text-[10px] font-bold px-2 py-1 uppercase tracking-widest bg-[#22c55e] text-[#081208]">SaaS</span>
+                    </div>
+                  </div>
+                  <div class="p-8">
+                    <h3 class="font-display font-black text-2xl text-white mb-2 group-hover:text-[#22c55e] transition-colors">Plataforma SaaS de gestión logística</h3>
+                    <p class="text-white/40 font-mono text-xs uppercase tracking-wider mb-4">Logística · Supply Chain · Real-time</p>
+                    <p class="text-white/50 mb-6 leading-relaxed">Panel centralizado para rastreo de flotas, optimización de rutas y métricas de entrega en tiempo real.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                      <span class="px-2 py-1 bg-[#22c55e]/10 border border-[#22c55e]/30 text-[#22c55e] font-mono text-[10px]">React</span>
+                      <span class="px-2 py-1 bg-[#22c55e]/10 border border-[#22c55e]/30 text-[#22c55e] font-mono text-[10px]">Node.js</span>
+                      <span class="px-2 py-1 bg-[#22c55e]/10 border border-[#22c55e]/30 text-[#22c55e] font-mono text-[10px]">AWS</span>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-white/10 pt-6">
+                      <div>
+                        <div class="font-display font-black text-2xl text-[#84cc16]">+35%</div>
+                        <div class="font-mono text-[10px] text-white/40 uppercase">Eficiencia de rutas</div>
+                      </div>
+                      <a href="contacto.html" class="inline-flex items-center gap-2 font-mono text-sm text-[#22c55e] hover:text-[#84cc16] transition-colors">
+                        <span>Hablemos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card group relative bg-[#0d1f0d] border-4 border-[#84cc16] transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0_#84cc16] overflow-hidden">
+                  <div class="relative overflow-hidden aspect-video">
+                    <img src="images/project_thumb_02.jpg" alt="E-commerce omnicanal con catálogo de productos y pasarela de pagos" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute top-4 left-4">
+                      <span class="font-mono text-[10px] font-bold px-2 py-1 uppercase tracking-widest bg-[#84cc16] text-[#081208]">E-commerce</span>
+                    </div>
+                  </div>
+                  <div class="p-8">
+                    <h3 class="font-display font-black text-2xl text-white mb-2 group-hover:text-[#84cc16] transition-colors">E-commerce omnicanal para retail</h3>
+                    <p class="text-white/40 font-mono text-xs uppercase tracking-wider mb-4">Retail · Ventas · ERP</p>
+                    <p class="text-white/50 mb-6 leading-relaxed">Tienda online con catálogo multicanal, pagos locales, inventario unificado e integración con ERP.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                      <span class="px-2 py-1 bg-[#84cc16]/10 border border-[#84cc16]/30 text-[#84cc16] font-mono text-[10px]">Next.js</span>
+                      <span class="px-2 py-1 bg-[#84cc16]/10 border border-[#84cc16]/30 text-[#84cc16] font-mono text-[10px]">Stripe</span>
+                      <span class="px-2 py-1 bg-[#84cc16]/10 border border-[#84cc16]/30 text-[#84cc16] font-mono text-[10px]">PostgreSQL</span>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-white/10 pt-6">
+                      <div>
+                        <div class="font-display font-black text-2xl text-[#22c55e]">2.4x</div>
+                        <div class="font-mono text-[10px] text-white/40 uppercase">Incremento de ventas</div>
+                      </div>
+                      <a href="contacto.html" class="inline-flex items-center gap-2 font-mono text-sm text-[#84cc16] hover:text-[#22c55e] transition-colors">
+                        <span>Hablemos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card group relative bg-[#0d1f0d] border-4 border-[#84cc16] transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0_#84cc16] overflow-hidden">
+                  <div class="relative overflow-hidden aspect-video">
+                    <img src="images/project_thumb_03.jpg" alt="App móvil de reservas con calendario y pagos digitales" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute top-4 left-4">
+                      <span class="font-mono text-[10px] font-bold px-2 py-1 uppercase tracking-widest bg-[#84cc16] text-[#081208]">Mobile</span>
+                    </div>
+                  </div>
+                  <div class="p-8">
+                    <h3 class="font-display font-black text-2xl text-white mb-2 group-hover:text-[#84cc16] transition-colors">App móvil de reservas y pagos</h3>
+                    <p class="text-white/40 font-mono text-xs uppercase tracking-wider mb-4">Servicios · Agenda · Pagos</p>
+                    <p class="text-white/50 mb-6 leading-relaxed">Aplicación iOS y Android para agendar servicios, pagos digitales, recordatorios y notificaciones push.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                      <span class="px-2 py-1 bg-[#84cc16]/10 border border-[#84cc16]/30 text-[#84cc16] font-mono text-[10px]">Flutter</span>
+                      <span class="px-2 py-1 bg-[#84cc16]/10 border border-[#84cc16]/30 text-[#84cc16] font-mono text-[10px]">Firebase</span>
+                      <span class="px-2 py-1 bg-[#84cc16]/10 border border-[#84cc16]/30 text-[#84cc16] font-mono text-[10px]">API REST</span>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-white/10 pt-6">
+                      <div>
+                        <div class="font-display font-black text-2xl text-[#22c55e]">+18K</div>
+                        <div class="font-mono text-[10px] text-white/40 uppercase">Descargas</div>
+                      </div>
+                      <a href="contacto.html" class="inline-flex items-center gap-2 font-mono text-sm text-[#84cc16] hover:text-[#22c55e] transition-colors">
+                        <span>Hablemos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="project-card group relative bg-[#0d1f0d] border-4 border-[#22c55e] transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0_#22c55e] overflow-hidden">
+                  <div class="relative overflow-hidden aspect-video">
+                    <img src="images/project_thumb_04.jpg" alt="Dashboard de analytics financiero con gráficos de KPIs" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute top-4 left-4">
+                      <span class="font-mono text-[10px] font-bold px-2 py-1 uppercase tracking-widest bg-[#22c55e] text-[#081208]">BI</span>
+                    </div>
+                  </div>
+                  <div class="p-8">
+                    <h3 class="font-display font-black text-2xl text-white mb-2 group-hover:text-[#22c55e] transition-colors">Dashboard de analytics financiero</h3>
+                    <p class="text-white/40 font-mono text-xs uppercase tracking-wider mb-4">Finanzas · BI · KPIs</p>
+                    <p class="text-white/50 mb-6 leading-relaxed">Visualización de KPIs financieros, reportes automatizados y proyecciones con inteligencia de negocios.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                      <span class="px-2 py-1 bg-[#22c55e]/10 border border-[#22c55e]/30 text-[#22c55e] font-mono text-[10px]">Vue.js</span>
+                      <span class="px-2 py-1 bg-[#22c55e]/10 border border-[#22c55e]/30 text-[#22c55e] font-mono text-[10px]">Python</span>
+                      <span class="px-2 py-1 bg-[#22c55e]/10 border border-[#22c55e]/30 text-[#22c55e] font-mono text-[10px]">BigQuery</span>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-white/10 pt-6">
+                      <div>
+                        <div class="font-display font-black text-2xl text-[#84cc16]">-40%</div>
+                        <div class="font-mono text-[10px] text-white/40 uppercase">Tiempo de reportes</div>
+                      </div>
+                      <a href="contacto.html" class="inline-flex items-center gap-2 font-mono text-sm text-[#22c55e] hover:text-[#84cc16] transition-colors">
+                        <span>Hablemos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Casos de estudio -->
+        <section class="relative w-full py-24 bg-[#040a04]">
+          <div class="w-full px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto">
+              <div class="mb-16">
+                <span class="section-header inline-block px-4 py-2 mb-6 bg-[#22c55e]/10 border-2 border-[#22c55e] font-mono text-xs text-[#22c55e] uppercase tracking-widest corner-cut-sm-1">Casos de estudio</span>
+                <h2 class="section-header font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
+                  HISTORIAS DE <span class="text-[#84cc16]">ÉXITO</span>
+                </h2>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <article class="group bg-[#0d1f0d] border-2 border-white/10 hover:border-[#22c55e] transition-colors overflow-hidden corner-cut-1">
+                  <div class="overflow-hidden aspect-[4/3]">
+                    <img src="images/case_study_01.jpg" alt="Caso de estudio: rediseño de plataforma de delivery local" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  </div>
+                  <div class="p-6">
+                    <p class="font-mono text-xs text-[#22c55e] uppercase tracking-wider mb-2">Delivery · UX/UI</p>
+                    <h3 class="font-display font-bold text-xl text-white mb-3">Rediseño de plataforma de delivery local</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Optimizamos el flujo de pedidos y redujimos el abandono de carrito en un 28% con una experiencia mobile-first.</p>
+                    <a href="contacto.html" class="inline-flex items-center gap-2 font-mono text-xs text-[#22c55e] hover:text-[#84cc16] transition-colors">Solicitar caso similar<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                  </div>
+                </article>
+
+                <article class="group bg-[#0d1f0d] border-2 border-white/10 hover:border-[#84cc16] transition-colors overflow-hidden corner-cut-2">
+                  <div class="overflow-hidden aspect-[4/3]">
+                    <img src="images/case_study_02.jpg" alt="Caso de estudio: migración de infraestructura a la nube" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  </div>
+                  <div class="p-6">
+                    <p class="font-mono text-xs text-[#84cc16] uppercase tracking-wider mb-2">Cloud · DevOps</p>
+                    <h3 class="font-display font-bold text-xl text-white mb-3">Migración de infraestructura a la nube</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Llevamos una arquitectura monolítica a contenedores en AWS, logrando 99.9% de uptime y escalabilidad automática.</p>
+                    <a href="contacto.html" class="inline-flex items-center gap-2 font-mono text-xs text-[#84cc16] hover:text-[#22c55e] transition-colors">Solicitar caso similar<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                  </div>
+                </article>
+
+                <article class="group bg-[#0d1f0d] border-2 border-white/10 hover:border-[#22c55e] transition-colors overflow-hidden corner-cut-1">
+                  <div class="overflow-hidden aspect-[4/3]">
+                    <img src="images/case_study_03.jpg" alt="Caso de estudio: app de fidelización para cadena de restaurantes" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  </div>
+                  <div class="p-6">
+                    <p class="font-mono text-xs text-[#22c55e] uppercase tracking-wider mb-2">Fidelización · Mobile</p>
+                    <h3 class="font-display font-bold text-xl text-white mb-3">App de fidelización para restaurantes</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Programa de puntos, recomendaciones personalizadas y push geolocalizados que aumentaron la recurrencia en un 45%.</p>
+                    <a href="contacto.html" class="inline-flex items-center gap-2 font-mono text-xs text-[#22c55e] hover:text-[#84cc16] transition-colors">Solicitar caso similar<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="relative w-full py-24 bg-[#081208] overflow-hidden">
+          <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#22c55e]/5 to-transparent"></div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 border-4 border-[#22c55e]/20 corner-cut-2"></div>
+          </div>
+          <div class="relative w-full px-6 lg:px-12">
+            <div class="max-w-4xl mx-auto text-center">
+              <h2 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white mb-6 leading-tight">
+                ¿LISTO PARA TU <span class="text-[#22c55e]">SIGUIENTE PROYECTO</span>?
+              </h2>
+              <p class="text-lg text-white/50 mb-10 max-w-2xl mx-auto">
+                Cuéntanos tu idea y te ayudamos a convertirla en un producto digital escalable, medible y alineado a tus objetivos de negocio.
+              </p>
+              <a href="contacto.html" class="btn-brutal inline-flex items-center gap-2 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-5 h-5" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+                Iniciar proyecto ahora
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="relative bg-[#040a04] border-t-4 border-[#22c55e]" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="w-full px-6 lg:px-12 py-20">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+              <div class="lg:col-span-2">
+                <a class="inline-flex items-center gap-3 mb-6 group" href="index.html">
+                  <img src="logo.png" alt="Createam" class="h-12 w-auto" />
+                  <span class="font-display font-black text-3xl"><span style="color:#22c55e">CREA</span><span style="color:#84cc16">TEAM</span></span>
+                </a>
+                <p class="text-white/40 leading-relaxed max-w-md mb-8">
+                  Desarrollamos software con creatividad y tecnología de punta. Transformamos tus ideas en soluciones digitales que impulsan tu negocio.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white mb-6 flex items-center gap-2"><span class="w-2 h-2 bg-[#22c55e]"></span>SERVICIOS</h4>
+                <ul class="space-y-3">
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/desarrollo-web.html"><span>Desarrollo Web</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/apps-moviles.html"><span>Apps Móviles</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/presencia-digital.html"><span>Presencia Digital</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/optimizacion.html"><span>Optimización</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/arquitectura-cloud.html"><span>Arquitectura Cloud</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/ux-ui-design.html"><span>UX/UI Design</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="servicios/integracion-ia.html"><span>Integración de IA</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white mb-6 flex items-center gap-2"><span class="w-2 h-2 bg-[#84cc16]"></span>EMPRESA</h4>
+                <ul class="space-y-3">
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="nosotros.html"><span>Sobre nosotros</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="proyectos.html"><span>Proyectos</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="blog.html"><span>Blog</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#84cc16] transition-colors" href="contacto.html"><span>Contacto</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white mb-6 flex items-center gap-2"><span class="w-2 h-2 bg-[#22c55e]"></span>BLOG</h4>
+                <ul class="space-y-3">
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/ia-para-negocios.html"><span>IA para tu negocio</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/arquitectura-clean.html"><span>Arquitectura Clean</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/microservicios.html"><span>Microservicios</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/react-vs-vue.html"><span>React vs Vue</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                  <li><a class="group flex items-center gap-2 text-white/40 hover:text-[#22c55e] transition-colors" href="blog/devops-basico.html"><span>DevOps Básico</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+              <p class="font-mono text-sm text-white/30">© <span class="copyright-year">2026</span> CREATEAM. TODOS LOS DERECHOS RESERVADOS.</p>
+              <a class="font-mono text-sm text-white/30 hover:text-[#22c55e] transition-colors" href="politica-privacidad.html">Política de privacidad</a>
+              <p class="font-mono text-sm text-white/30 flex items-center gap-2">HECHO CON<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 text-[#22c55e]" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>EN LIMA, PERÚ</p>
+            </div>
+          </div>
+        </div>
+        <button id="back-to-top" class="fixed bottom-24 right-6 w-14 h-14 bg-[#22c55e] flex items-center justify-center hover:bg-[#84cc16] transition-colors z-50 cursor-pointer border-none" aria-label="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-6 h-6 text-black -rotate-45" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+51945111310?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20cotizar%20un%20proyecto.%20¿Me%20pueden%20ayudar?" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="Contáctanos por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</body>
+</html>

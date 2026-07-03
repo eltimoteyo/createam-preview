@@ -1,0 +1,20 @@
+# URLs limpias principales
+/servicios    /servicios.html    301
+/proyectos    /proyectos.html    301
+/nosotros     /nosotros.html     301
+/blog         /blog.html         301
+/contacto     /contacto.html     301
+
+# Subpáginas de servicio (compatibilidad con URLs antiguas/pretty)
+/servicios/desarrollo-web/    /servicios/desarrollo-web.html    301
+/servicios/apps-moviles/      /servicios/apps-moviles.html      301
+/servicios/presencia-digital/ /servicios/presencia-digital.html 301
+/servicios/optimizacion/      /servicios/optimizacion.html      301
+/servicios/arquitectura-cloud/ /servicios/arquitectura-cloud.html 301
+/servicios/ui-ux-design/      /servicios/ux-ui-design.html      301
+
+# Posts de blog
+/blog/arquitectura-clean/     /blog/arquitectura-clean.html     301
+/blog/microservicios/         /blog/microservicios.html         301
+/blog/react-vs-vue/           /blog/react-vs-vue.html           301
+/blog/devops-basico/          /blog/devops-basico.html          301
